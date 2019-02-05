@@ -34,8 +34,8 @@ public class SmsService {
         // topic arn is necessary to send an sms
         String topicArn = "arn:aws:sns:us-west-2:737065854791:tpc";
 
-         //notification sending request with ARN,Sending type,GSM number
-        SubscribeRequest subRequest = new SubscribeRequest(topicArn, "SMS","+90"+"5448961000");
+         //notification sending request with ARN,Sending type,Country Code + GSM number
+        SubscribeRequest subRequest = new SubscribeRequest(topicArn, "SMS","country code"+"your gsm number here");
 
         snsClient.subscribe(subRequest);
 

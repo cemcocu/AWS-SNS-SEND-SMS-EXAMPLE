@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-@RequestMapping(value="/mail")
+@RequestMapping(value="/sms")
 public class SmsController {
 
     @Autowired
